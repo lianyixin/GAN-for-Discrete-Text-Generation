@@ -2,7 +2,7 @@
 My personal learning for sequence generation using GAN
 
 ## Why sequence generation
-Q&A, 
+Dialog systems, machine translation, image captioning. 
 
 ## The way for sequence generation
 ### MLE
@@ -17,7 +17,7 @@ Without the problem of generating discrete data, however, it has more constraint
 ## SeqGAN, an impactful way for discrete sequence generation
 Generally, GAN is applied for continuous problem like image generation. For discrete sequence generation, the gradient of loss from discriminator cannot transferred to the generator. SeqGAN innovatively incorporated RL into the update of generator gradient using Monte Carlo policy gradient estimation. 
 
-However, after several experiments, it shows the generated texts face the problem of poor quality. Another problem is mode collapse - GAN prefers to generate samples around only a few modes while igoring other modes, lack of diversity.  
+However, after several experiments, it shows the generated texts face the problem of poor quality - The entire text lacks intermediate information about text structure. Another problem is mode collapse - GAN prefers to generate samples around only a few modes while igoring other modes, lack of diversity.  
 
 ## Improvement 
 ### Loss Function
@@ -25,6 +25,9 @@ However, after several experiments, it shows the generated texts face the proble
 ### Different RL methods
 ### Reward Design
 ### Network Architecture
+DPGAN:
+
+LeakGAN: 
 
 ## Objective-Reinforced
 ### Fixed objective reward component
