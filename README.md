@@ -17,7 +17,9 @@ Without the problem of generating discrete data, however, it has more constraint
 ## SeqGAN, an impactful way for discrete sequence generation
 Generally, GAN is applied for continuous problem like image generation. For discrete sequence generation, the gradient of loss from discriminator cannot transferred to the generator. SeqGAN innovatively incorporated RL into the update of generator gradient using Monte Carlo policy gradient estimation. 
 
-However, after several experiments, it shows the generated texts face the problem of poor quality - The entire text lacks intermediate information about text structure. Another problem is mode collapse - GAN prefers to generate samples around only a few modes while igoring other modes, lack of diversity.  
+However, after several experiments, it shows the generated texts face the problem of poor quality. 
+  * The entire text lacks intermediate information about text structure - The binary guiding signal from D is sparse as it is only available when the whole text sample is generated. 
+  * Another problem is mode collapse - GAN prefers to generate samples around only a few modes while igoring other modes, lack of diversity.  
 
 ## Improvement 
 ### Loss Function
@@ -28,6 +30,7 @@ However, after several experiments, it shows the generated texts face the proble
 DPGAN:
 
 LeakGAN: 
+![leakgan](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiFjLPO-PTiAhVES7wKHT-lDMoQjRx6BAgBEAU&url=https%3A%2F%2Ftwitter.com%2Fsamim%2Fstatus%2F942317226820022272&psig=AOvVaw2HKaHet2B8Rt3YrKUpdzSL&ust=1561012967959338)
 
 ## Objective-Reinforced
 ### Fixed objective reward component
