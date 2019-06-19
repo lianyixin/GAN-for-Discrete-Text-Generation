@@ -30,7 +30,7 @@ However, after several experiments, it shows the generated texts face the proble
 DPGAN:
 
 LeakGAN: 
-![leakgan](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiFjLPO-PTiAhVES7wKHT-lDMoQjRx6BAgBEAU&url=https%3A%2F%2Ftwitter.com%2Fsamim%2Fstatus%2F942317226820022272&psig=AOvVaw2HKaHet2B8Rt3YrKUpdzSL&ust=1561012967959338)
+![leakgan](https://pbs.twimg.com/media/DRPIgb4XkAADSkV.jpg)
 
 ## Objective-Reinforced
 ### Fixed objective reward component
