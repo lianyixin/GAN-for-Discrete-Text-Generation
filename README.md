@@ -48,4 +48,5 @@ SentiGAN:
 
 LabelGAN:
 
-### StyleGan
+### Style transfer
+
