@@ -1,7 +1,7 @@
 # GAN-for-Sequence-Generation
 
 ## Why sequence generation
-Dialog systems, machine translation, image captioning, etc. 
+Dialog systems, machine translation, image captioning, data augmentation, etc. 
 
 ## The way for sequence generation
 ### Conventional
