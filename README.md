@@ -64,6 +64,6 @@ VAEs are commonly used to learn the hidden representation of inputs for dimensio
 
 ![crossalignment](http://isukorea.com/media/PNG/latent.PNG)
 
-![rl_based_style_transfer](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/8f0bf19b5c76f26dffbcf8dfd03c6a7a8b58d716/4-Figure2-1.png)
+![rl_based_style_transfer](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjUhv3jwIbjAhXM62EKHTYzCpgQjRx6BAgBEAU&url=https%3A%2F%2Fwww.profillic.com%2Fpaper%2Farxiv%3A1903.10671&psig=AOvVaw3Ee0uzYgZa9fuTK2Y3aGhf&ust=1561616227818129)
 
 
