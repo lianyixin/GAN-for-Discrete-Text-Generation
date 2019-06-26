@@ -32,6 +32,8 @@ RankGAN:
 
 ### Generator Gradient Equation
 ### Different RL methods
+MCST comes at significant computational cost.
+
 ### Reward Design
  * Rescale reward for solving vanishing gradients
  * Change classifer_based discriminator to Language model and redesign the reward to be the sentence-level reward + word-level reward.
@@ -67,5 +69,4 @@ VAEs are commonly used to learn the hidden representation of inputs for dimensio
 Another way is by the use of a style classifier without explicitly separating content and style. 
 
 ![rl_based_style_transfer](https://www.groundai.com/media/arxiv_projects/524865/Figure/detailed.png.344x181_q75_crop.png)
-
 
