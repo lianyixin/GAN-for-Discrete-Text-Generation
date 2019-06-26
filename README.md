@@ -43,6 +43,9 @@ During adversarial training process, the discriminator reveals its internal stat
 
 ![leakgan](https://pbs.twimg.com/media/DRPIgb4XkAADSkV.jpg)
 
+Architecture from Dr.Li:
+Share the information from Discriminator with Generator (same as LeakGAN, but different design)
+
 ## Objective-Reinforced
 ### Fixed objective reward component
 ### Multi-feature output reward
