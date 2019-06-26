@@ -49,6 +49,8 @@ Architecture from Dr.Li:
 Share the information from Discriminator with Generator (same as LeakGAN, but different design)
 
 ## Objective-Reinforced
+Problem Define: Generate target sentence in specific domain with 2 datasets, one large general domain dataset A, and one specific domain dataset B.
+
 ### Fixed objective reward component
 ### Multi-feature output reward
 SentiGAN:
@@ -56,4 +58,12 @@ SentiGAN:
 LabelGAN:
 
 ### Style transfer
+Most articles explore transferring the text from the source style to the target style. Most existing unsupervised approaches share a core idea of disentangling content and style of texts. 
+
+VAEs are commonly used to learn the hidden representation of inputs for dimensionality reduction, and have been found to be useful for representing the content of the source. Cycle consistency proposes to reconstruct the input sentence from the content representation, by forcing the model to keep the information of the source sentence. 
+
+![crossalignment](http://isukorea.com/media/PNG/latent.PNG)
+
+
+
 
