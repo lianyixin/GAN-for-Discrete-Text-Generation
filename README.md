@@ -73,3 +73,6 @@ Another way is by the use of a style classifier without explicitly separating co
 StyleGAN for image style transfer:
 
 ![stylegan](https://cdn-images-1.medium.com/max/1600/0*uqn4slMHrFYkFmjS.png)
+
+Inspiration for our problem:
+
