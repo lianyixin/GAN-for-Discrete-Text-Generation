@@ -24,24 +24,33 @@ However, after several experiments, it shows the generated texts face the proble
   * Another problem is mode collapse - GAN prefers to generate samples around only a few modes while igoring other modes, lack of diversity. 
   * If the discriminator is too perfect, it's hard for generator to learn - gradient vanishing. 
 
-## Improvement 
+## Improvement Method
 ### Loss Function
 WGAN:
+In order to solve gradient vanishing problem. Introduce the w distance into GAN. Remove the last sigmoid layer of Discriminator.
+![wgan_equation](https://github.com/lianyixin/GAN-for-Sequence-Generation/blob/master/wgan.png)
 
-RankGAN:
+![wgan](https://cdn-images-1.medium.com/max/1600/1*-VajV2qCbPWDCdNGbQfCng.png)
 
 ### Generator Gradient Equation
+
 ### Different RL methods
 MCST comes at significant computational cost.
 
 ### Reward Design
- * Rescale reward for solving vanishing gradients
- * Change classifer_based discriminator to Language model and redesign the reward to be the sentence-level reward + word-level reward.
-### Network Architecture
+RankGAN:
+Rather than training the discriminator to learn and assign absolute binary predicate for individual data sample, RankGAN is able to rank a collection of human-written and machine-written sentences by giving a reference group. 
+
+![rankgan_equation](https://tobiaslee.top/img/rank_gan.png)
+
+![rankgan](https://github.com/lianyixin/GAN-for-Sequence-Generation/blob/master/rankgan.png)
+
 DPGAN:
+Change classifer_based discriminator to Language model and redesign the reward to be the sentence-level reward + word-level reward.
 
 ![dpgan](https://cdn-images-1.medium.com/max/1600/1*8G0FmWqfWDJXCIUbrY-JUA.png)
 
+### Network Architecture
 LeakGAN: 
 During adversarial training process, the discriminator reveals its internal state to guide the generator more informatively and frequently. (Generator -> Manager + Worker lstm network, get features from discriminator)
 
@@ -54,6 +63,7 @@ Share the information from Discriminator with Generator (same as LeakGAN, but di
 Problem Define: Generate target sentence in specific domain with 2 datasets, one large general domain dataset A, and one specific domain dataset B.
 
 ### Fixed objective reward component
+
 ### Multi-feature output reward
 SentiGAN:
 
