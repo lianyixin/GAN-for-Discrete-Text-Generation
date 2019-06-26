@@ -70,3 +70,6 @@ Another way is by the use of a style classifier without explicitly separating co
 
 ![rl_based_style_transfer](https://www.groundai.com/media/arxiv_projects/524865/Figure/detailed.png.344x181_q75_crop.png)
 
+StyleGAN for image style transfer:
+
+![stylegan](https://cdn-images-1.medium.com/max/1600/0*uqn4slMHrFYkFmjS.png)
