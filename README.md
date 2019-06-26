@@ -68,7 +68,7 @@ VAEs are commonly used to learn the hidden representation of inputs for dimensio
 
 Another way is by the use of a style classifier without explicitly separating content and style. 
 
-![rl_based_style_transfer](https://www.groundai.com/media/arxiv_projects/524865/Figure/detailed.png.344x181_q75_crop.png)
+![rl_based_style_transfer](https://github.com/lianyixin/GAN-for-Sequence-Generation/blob/master/rlbasedstyletransfer.png)
 
 StyleGAN for image style transfer:
 
