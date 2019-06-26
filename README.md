@@ -36,6 +36,8 @@ RankGAN:
 ### Network Architecture
 DPGAN:
 
+![dpgan](https://cdn-images-1.medium.com/max/1600/1*8G0FmWqfWDJXCIUbrY-JUA.png)
+
 LeakGAN: 
 During adversarial training process, the discriminator reveals its internal state to guide the generator more informatively and frequently. (Generator -> Manager + Worker lstm network, get features from discriminator)
 
