@@ -64,6 +64,8 @@ VAEs are commonly used to learn the hidden representation of inputs for dimensio
 
 ![crossalignment](http://isukorea.com/media/PNG/latent.PNG)
 
-![rl_based_style_transfer](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjUhv3jwIbjAhXM62EKHTYzCpgQjRx6BAgBEAU&url=https%3A%2F%2Fwww.profillic.com%2Fpaper%2Farxiv%3A1903.10671&psig=AOvVaw3Ee0uzYgZa9fuTK2Y3aGhf&ust=1561616227818129)
+Another way is by the use of a style classifier without explicitly separating content and style. 
+
+![rl_based_style_transfer](https://www.groundai.com/media/arxiv_projects/524865/Figure/detailed.png.344x181_q75_crop.png)
 
 
