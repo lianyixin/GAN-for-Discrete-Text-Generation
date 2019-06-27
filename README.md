@@ -44,7 +44,7 @@ However, after several experiments, it shows the generated texts face the proble
   
   ![gradient_vanishing]()
 
-## Improvement Direction
+## Research Direction
  * Loss Function
  * RL Methods 
  * Reward Design
