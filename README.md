@@ -19,6 +19,8 @@ Generally, GAN is applied for continuous problem like image generation. For disc
 
 ![seqgan](https://cdn-images-1.medium.com/max/1200/0*FUwClIx3rko7vbFG)
 
+![seqgan_equation](https://cdn-images-1.medium.com/max/1600/0*JcHrudkUiINkgXhG.png)
+
 However, after several experiments, it shows the generated texts face the problem of poor quality. 
   * The entire text lacks intermediate information about text structure - The binary guiding signal from D is sparse as it is only available when the whole text sample is generated. 
   * Another problem is mode collapse - GAN prefers to generate samples around only a few modes while igoring other modes, lack of diversity. 
@@ -27,6 +29,7 @@ However, after several experiments, it shows the generated texts face the proble
 ## Improvement Method
 ### Loss Function
 WGAN:
+
 In order to solve gradient vanishing problem. Introduce the w distance into GAN. Remove the last sigmoid layer of Discriminator.
 ![wgan_equation](https://github.com/lianyixin/GAN-for-Sequence-Generation/blob/master/wgan.png)
 
@@ -39,6 +42,7 @@ MCST comes at significant computational cost.
 
 ### Reward Design
 RankGAN:
+
 Rather than training the discriminator to learn and assign absolute binary predicate for individual data sample, RankGAN is able to rank a collection of human-written and machine-written sentences by giving a reference group. 
 
 ![rankgan_equation](https://tobiaslee.top/img/rank_gan.png)
@@ -46,12 +50,14 @@ Rather than training the discriminator to learn and assign absolute binary predi
 ![rankgan](https://github.com/lianyixin/GAN-for-Sequence-Generation/blob/master/rankgan.png)
 
 DPGAN:
+
 Change classifer_based discriminator to Language model and redesign the reward to be the sentence-level reward + word-level reward.
 
 ![dpgan](https://cdn-images-1.medium.com/max/1600/1*8G0FmWqfWDJXCIUbrY-JUA.png)
 
 ### Network Architecture
 LeakGAN: 
+
 During adversarial training process, the discriminator reveals its internal state to guide the generator more informatively and frequently. (Generator -> Manager + Worker lstm network, get features from discriminator)
 
 ![leakgan](https://pbs.twimg.com/media/DRPIgb4XkAADSkV.jpg)
@@ -60,7 +66,9 @@ Architecture from Dr.Li:
 Share the information from Discriminator with Generator (same as LeakGAN, but different design)
 
 ## Objective-Reinforced
-Problem Define: Generate target sentence in specific domain with 2 datasets, one large general domain dataset A, and one specific domain dataset B.
+Problem Define: 
+
+Generate target sentence in specific domain with 2 datasets, one large general domain dataset A, and one specific domain dataset B.
 
 ### Fixed objective reward component
 
