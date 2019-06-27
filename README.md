@@ -21,6 +21,8 @@ Generally, GAN is applied for continuous problem like image generation. For disc
 
 ![seqgan_equation](https://cdn-images-1.medium.com/max/1600/0*JcHrudkUiINkgXhG.png)
 
+![another_equation]()
+
 However, after several experiments, it shows the generated texts face the problem of poor quality. 
   * The entire text lacks intermediate information about text structure - The binary guiding signal from D is sparse as it is only available when the whole text sample is generated. 
   * Another problem is mode collapse - GAN prefers to generate samples around only a few modes while igoring other modes, lack of diversity. 
