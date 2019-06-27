@@ -43,6 +43,8 @@ However, after several experiments, it shows the generated texts face the proble
   * Gradient vanishing - If the discriminator is too perfect, it's hard for generator to learn.
   
   ![gradient_vanishing]()
+  
+  ![NLL_score](https://www.researchgate.net/publication/308324937/figure/fig1/AS:408264924778496@1474349351242/Negative-log-likelihood-performance-with-different-pre-training-epochs-before-the.png)
 
 ## Research Direction
  * Loss Function
