@@ -13,7 +13,7 @@ Drawbacks: biased and correlate poorly with human judgments. Lack of semeantic p
 ### 4. GAN
 An approach for estimating intractable probabilities.
 
-![gan](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/11000153/g1.jpg =100x)
+![gan](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/11000153/g1.jpg)
 
 ### 5. VAE
 Without the problem of generating discrete data, however, it has more constraints and restrictions than GAN.
