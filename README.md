@@ -49,7 +49,7 @@ However, after several experiments, it shows the generated texts face the proble
  * RL Methods 
  * Reward Design
  * Network Architecture
- * 
+ * Objective-Reinforced
  
 ### 1. Loss Function
 WGAN:
@@ -90,33 +90,33 @@ Problem Define:
 
 Generate target sentence in specific domain with 2 datasets, one large general domain dataset A, and one specific domain dataset B.
 
-### Fixed objective reward component
+ * Fixed objective reward component
 
-### Multi-feature output reward
-SentiGAN:
+ * Multi-feature output reward
+  SentiGAN:
 
-LabelGAN:
+  LabelGAN:
 
-### Style transfer
-Most articles explore transferring the text from the source style to the target style. Most existing unsupervised approaches share a core idea of disentangling content and style of texts. 
+ * Style transfer
+  Most articles explore transferring the text from the source style to the target style. Most existing unsupervised approaches share a core idea of disentangling content and style of texts. 
 
-VAEs are commonly used to learn the hidden representation of inputs for dimensionality reduction, and have been found to be useful for representing the content of the source. Cycle consistency proposes to reconstruct the input sentence from the content representation, by forcing the model to keep the information of the source sentence. 
+  VAEs are commonly used to learn the hidden representation of inputs for dimensionality reduction, and have been found to be useful for representing the content of the source. Cycle consistency proposes to reconstruct the input sentence from the content representation, by forcing the model to keep the information of the source sentence. 
 
-![crossalignment](http://isukorea.com/media/PNG/latent.PNG)
+  ![crossalignment](http://isukorea.com/media/PNG/latent.PNG)
 
-Another way is by the use of a style classifier without explicitly separating content and style. 
+  Another way is by the use of a style classifier without explicitly separating content and style. 
 
-![rl_based_style_transfer](https://github.com/lianyixin/GAN-for-Sequence-Generation/blob/master/rlbasedstyletransfer.png)
+  ![rl_based_style_transfer](https://github.com/lianyixin/GAN-for-Sequence-Generation/blob/master/rlbasedstyletransfer.png)
 
-CGAN:
+  CGAN:
 
-Feeding the data y which is conditioned on to both generator and discriminator.
+  Feeding the data y which is conditioned on to both generator and discriminator.
 
-![cgan]()
+  ![cgan]()
 
-StyleGAN for image style transfer:
+  StyleGAN for image style transfer:
 
-![stylegan](https://cdn-images-1.medium.com/max/1600/0*uqn4slMHrFYkFmjS.png)
+  ![stylegan](https://cdn-images-1.medium.com/max/1600/0*uqn4slMHrFYkFmjS.png)
 
-Inspiration for our problem:
+  Inspiration for our problem:
 
