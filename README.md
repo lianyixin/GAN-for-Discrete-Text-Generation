@@ -11,6 +11,9 @@ Drawbacks: exposure bias and label bias; general, boring, repeat.
 Drawbacks: biased and correlate poorly with human judgments. less of semeantic properties.
 ### GAN
 An approach for estimating intractable probabilities.
+
+![gan](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/11000153/g1.jpg)
+
 ### VAE
 Without the problem of generating discrete data, however, it has more constraints and restrictions than GAN.
 
